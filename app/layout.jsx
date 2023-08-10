@@ -9,22 +9,36 @@ export const metadata = {
 
 const RootLayout = ({ children }) => {
   return (
+            <Provider>
     <html lang='en'>
         <body>
-            <Provider>
 
-            <div className='main'>
-                <div className='gradient'/>
-            </div>
+            
 
-            <main className='app'>
-                <Nav/>
+           
                 {children}
-            </main>
-            </Provider>
+            
         </body>
     </html>
+            </Provider>
   )
+//   return (
+//             <Provider>
+//     <html lang='en'>
+//         <body>
+
+//             <div className='main'>
+//                 <div className='gradient'/>
+//             </div>
+
+//             <main className='app'>
+//                 {/* <Nav/> */}
+//                 {children}
+//             </main>
+//         </body>
+//     </html>
+//             </Provider>
+//   )
 }
 
 export default RootLayout

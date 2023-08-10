@@ -54,23 +54,40 @@ const Nav = () => {
               />
             </Link>
           </div>
-        ) : (
+        ) : 
+        // (
+        //   <>
+        //     {providers &&
+        //       Object.values(providers).map((provider) => (
+        //         <button
+        //           type="button"
+        //           key={provider.name}
+        //           onClick={() => {
+        //             signIn(provider.id);
+        //           }}
+        //           className="black_btn"
+        //         >
+        //           Sign In
+        //         </button>
+        //       ))}
+        //   </>
+        // )
+        //changed code below
+        (
           <>
-            {providers &&
-              Object.values(providers).map((provider) => (
+              <Link href="/login">
                 <button
                   type="button"
-                  key={provider.name}
-                  onClick={() => {
-                    signIn(provider.id);
-                  }}
                   className="black_btn"
                 >
                   Sign In
                 </button>
-              ))}
+              
+              </Link>
+              
           </>
-        )}
+        )
+        }
       </div>
 
       {/* Mobile Navigation */}
