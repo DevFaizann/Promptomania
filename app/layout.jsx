@@ -1,44 +1,40 @@
-import '@styles/globals.css'
-import Nav from '@components/Nav';
-import Provider from '@components/Provider';
+import "@styles/globals.css";
+import Nav from "@components/Nav";
+import Provider from "@components/Provider";
 
 export const metadata = {
-    title: 'PromptAI',
-    description: 'Discover & Share AI Prompts'
-}
+  title: "PromptAI",
+  description: "Discover & Share AI Prompts",
+};
 
 const RootLayout = ({ children }) => {
   return (
-            <Provider>
-    <html lang='en'>
+    <Provider>
+      <html lang="en">
         <body>
-
-            
-
-           
-                {children}
-            
+          {children}
         </body>
-    </html>
-            </Provider>
-  )
-//   return (
-//             <Provider>
-//     <html lang='en'>
-//         <body>
+      </html>
+    </Provider>
+  );
 
-//             <div className='main'>
-//                 <div className='gradient'/>
-//             </div>
+  //   return (
+  //             <Provider>
+  //     <html lang='en'>
+  //         <body>
 
-//             <main className='app'>
-//                 {/* <Nav/> */}
-//                 {children}
-//             </main>
-//         </body>
-//     </html>
-//             </Provider>
-//   )
-}
+  //             <div className='main'>
+  //                 <div className='gradient'/>
+  //             </div>
 
-export default RootLayout
+  //             <main className='app'>
+  //                 {/* <Nav/> */}
+  //                 {children}
+  //             </main>
+  //         </body>
+  //     </html>
+  //             </Provider>
+  //   )
+};
+
+export default RootLayout;

@@ -5,6 +5,18 @@ import GithubProvider from "next-auth/providers/github"
 import User from '@models/user';
 import { connectToDB } from "@utils/database";
 
+
+//new code 
+// export default NextAuth({
+//     providers: [
+//         GoogleProvider({
+//             clientId: process.env.GOOGLE_CLIENTID,
+//             clientSecret:process.env.GOOGLE_SECRETKEY,
+//         })
+//     ]
+// })
+
+//new code 
 const handler = NextAuth({
     providers: [
         GoogleProvider({
