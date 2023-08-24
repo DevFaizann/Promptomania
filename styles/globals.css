@@ -137,8 +137,13 @@
 
 /* Nav Component */
 .logo_text {
-  @apply max-sm:hidden font-satoshi font-semibold text-lg text-black tracking-wide;
+  @apply max-sm:hidden text-lg font-extrabold text-black tracking-wide sm:text-3xl;
+  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
 }
+
+/* .logo_text_main {
+  @apply max-sm:hidden font-satoshi font-semibold text-lg text-black tracking-wide;
+} */
 
 .dropdown {
   @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end;

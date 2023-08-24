@@ -39,7 +39,7 @@ export const PATCH = async(request,{params}) => {
 
         await existingPrompt.save();
 
-        return new Response(JSON.stringify(existingPrompt), {status: 200})
+        return new Response("Successfully updated the Prompts", { status: 200 });
 
     } catch(error){
         console.log("Error in PATCH 'api/prompt/[id]/route.js'", error)
