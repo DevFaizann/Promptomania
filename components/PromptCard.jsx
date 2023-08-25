@@ -18,7 +18,7 @@ const PromptCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
     setShowFullPrompt(true);
   };
 
-  const truncatedPrompt = showFullPrompt ? post.prompt : post.prompt.slice(0, 250);
+  const truncatedPrompt = showFullPrompt ? post.prompt : post.prompt.slice(0, 350);
 
   const handleProfileClick = () => {
     if (post.creator._id === session?.user.id) return router.push("/profile");
@@ -61,8 +61,8 @@ const PromptCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
       </div>
       {/* <p className="my-4 font-satoshi text-sm text-gray-700">{post.prompt}</p> */}
       <p className="my-4 font-satoshi text-sm text-gray-700">{truncatedPrompt}
-        {!showFullPrompt && post.prompt.length > 250 && (
-          <button className="ml-2 text-blue-500 hover:underline" onClick={handleViewMore}>
+        {!showFullPrompt && post.prompt.length > 350 && (
+          <button className="ml-2 text-blue-500" onClick={handleViewMore}>
             View more
           </button>
         )}</p>

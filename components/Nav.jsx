@@ -29,7 +29,7 @@ const Nav = () => {
           alt="Logo"
           width="30"//30
           height="30"//30
-          className="object-contain md:-mr-2"
+          className="object-contain sm:-mr-2 md:-mr-2"
         />
         <p className="logo_text">romptomania</p>
       </Link>
@@ -39,7 +39,7 @@ const Nav = () => {
         {session?.user ? (
           <div className="flex gap-3 md:gap-5">
             <Link href="/create-prompt" className="black_btn">
-              Create Post
+              Let's Prompt!
             </Link>
 
             <button type="button" onClick={signOut} className="outline_btn">
@@ -103,7 +103,7 @@ const Nav = () => {
                   className="dropdown_link"
                   onClick={() => setToggleDropdown(false)}
                 >
-                  Create Prompt
+                  Let's Prompt!
                 </Link>
 
                 <button

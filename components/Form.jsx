@@ -6,7 +6,6 @@ const Form = ({ type, btn, desc, post, setPost, submitting, handleSubmit}) => {
       <h1 className="head_text text-left">
         <span className="blue_gradient">
         {type}
-         
         </span>
       </h1>
       <p className="desc text-left max-w-md md:ml-4">
@@ -47,15 +46,15 @@ const Form = ({ type, btn, desc, post, setPost, submitting, handleSubmit}) => {
 
         <div className="flex-end mx-3 mb-5 gap-4">
           <Link  href="/" className="text-gray-500 text-sm">
-          Cancel
+          Back
           </Link>
 
           <button
           type="submit"
           disabled={submitting}
-          className="px-5 py-1.5 text-sm bg-primary-orange rounded-full text-white"
+          className="px-5 py-2 text-sm bg-primary-orange text-white border border-primary-orange rounded-full transition ease-in-out duration-300 hover:bg-transparent hover:text-black hover:border-black"
           >
-            {!submitting ? `${btn}` : btn}
+            {submitting ? `${btn}` : btn}
 
           </button>
 

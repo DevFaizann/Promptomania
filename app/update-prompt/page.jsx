@@ -60,7 +60,9 @@ const UpdatePrompt = () => {
   };
   return (
     <Form
-      type="Edit "
+      type="Edit and Elevate!"
+      desc="Fine-Tune Your Prompt's Performance ✨"
+      btn="Enhance!"
       post={post}
       setPost={setPost}
       submitting={setSubmitting}
