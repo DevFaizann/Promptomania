@@ -8,14 +8,13 @@ export const metadata = {
   description: "Discover & Share AI Prompts",
 };
 
-const RootLayout = ({ children }) => {
-  return (
+const RootLayout = ({ children }) => (
     <html lang="en">
       <head>
         <link rel="icon" href="/assets/images/favicon.ico" />
       </head>
 
-      <body className="watermelon_gradient">
+      <body>
         <Provider>
           <div className="main">
             <div className="gradient" />
@@ -28,7 +27,6 @@ const RootLayout = ({ children }) => {
         </Provider>
       </body>
     </html>
-  );
-};
+);
 
 export default RootLayout;
