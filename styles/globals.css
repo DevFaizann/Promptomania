@@ -93,6 +93,10 @@
   @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
 }
 
+.watermelon_gradient {
+  @apply bg-gradient-to-r from-watermelon-1 to-watermelon-2;
+}
+
 .green_gradient {
   @apply bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent;
 }
@@ -137,8 +141,10 @@
 
 /* Nav Component */
 .logo_text {
-  @apply max-sm:hidden text-lg font-extrabold text-black tracking-wide sm:text-3xl;
-  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+  @apply max-sm:hidden text-lg font-bold text-black tracking-wide sm:text-2xl;
+  /* @apply bg-gradient-to-r from-burnt-1 to-burnt-2 bg-clip-text text-transparent; */
+  /* @apply bg-gradient-to-r from-sitheyes-1 via-sitheyes-2 to-sitheyes-3   bg-clip-text text-transparent; */
+  @apply bg-gradient-to-r from-fire-1 via-fire-2 via-fire-3 to-fire-4  bg-clip-text text-transparent;
 }
 
 /* .logo_text_main {

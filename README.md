@@ -1,4 +1,4 @@
-# PromptAI
+# Promptomania
 Create and share innovative prompts with the world!
 
 > coming soon

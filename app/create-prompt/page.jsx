@@ -42,7 +42,9 @@ const CreatePrompt = () => {
   };
   return (
     <Form
-      type="Create "
+      type="Have a thought bubble?"
+      desc="Your prompts + AI = Epic global stardom. Let's make waves!"
+      btn="Let's Prompt!"
       post={post}
       setPost={setPost}
       submitting={setSubmitting}

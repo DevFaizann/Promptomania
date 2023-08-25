@@ -27,11 +27,11 @@ const Nav = () => {
         <Image
           src="/assets/images/logo-p.png"
           alt="Logo"
-          width="50"//30
-          height="50"//30
-          className="object-contain"
+          width="30"//30
+          height="30"//30
+          className="object-contain md:-mr-2"
         />
-        <p className="logo_text">Promptomania</p>
+        <p className="logo_text">romptomania</p>
       </Link>
 
       {/* Desktop navigation */}
