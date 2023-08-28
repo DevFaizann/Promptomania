@@ -1,6 +1,3 @@
-<p align="center">     
- <a href="https://promptomania-mu.vercel.app"> <img width="full" src="https://github.com/DevFaizann/Promptomania/blob/main/public/assets/images/logo-p.png" alt="Promptomania"> </a></p>
-
 ## Overview
 [Promptomania](https://promptomania-mu.vercel.app/) is your go-to platform for exploring and sharing prompts that enhance your AI interactions. It allows you to create and share innovative prompts with the world!
 It's your ultimate platform for enhancing AI interactions through creative and innovative prompts. 
